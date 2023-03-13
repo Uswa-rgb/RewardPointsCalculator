@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zXFdmPbBStokcAnBU3LDNni+c+BdUz489Wocfvmokw4=",
+  "Source": "RewardsPointCalculator.Api",
+  "BasePath": "_content/RewardsPointCalculator.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
