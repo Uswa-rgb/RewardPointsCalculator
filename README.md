@@ -21,7 +21,7 @@ We can then use this information to calculate the total reward points earned by 
 | -----------| ------------- | ----------- | ----------| ----------| ---------- |
 | 001         | Ross Snow    | 70         | 20        | 0         | 50         |
 | 002         | Sarah Kim      | 90         | 0         | 0        | 90         |
-| 003         | Bob Johnson   | 555         | 30         | 10         | 25        |
+| 003         | Bob Johnson   | 55         | 30         | 10         | 25        |
 
 # Rewards Point Calculator API
 The Rewards Point Calculator API is a RESTful API that allows you to calculate the reward points earned by customers based on their transaction history.
