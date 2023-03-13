@@ -159,10 +159,28 @@ To invoke this API using a client, you can use an HTTP client such as Postman or
 curl -X GET "http://localhost:5017/api/rewards/8fba563e-43c9-4b1d-bc38-f942bbcd7dbf" -H "accept: application/json"
 ```
 
+## MongoDb Database
+Mongodb docker image has been used to store data.
 
+Following command can be used to run mongodb image:
+```
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -r MONGO_INITDB_ROOT_USERNAME=mongdboadmin -e MONGO_INITDB_ROOT_PASSWORD=webdir123R
+```
 
+# Unit Tests
 
+1. The first test case GetRewardPointsForAllCustomersAsync_ReturnsAllCustomersRewardPoints tests whether the GetRewardPointsForAllCustomersAsync action method of the RewardsPointController returns the correct reward points for all customers.
 
+2. The second test case GetRewardPointsForAllCustomersAsync_CustomersWithNoTransaction_ReturnsZeroRewardPointsforAllCustomers tests whether the GetRewardPointsForAllCustomersAsync action method of the RewardsPointController returns zero reward points for customers who have no transactions.
 
+3. The third test case GetRewardPointsForAllCustomersAsync_ReturnsNotFound_WhenNoCustomersExist tests whether the GetRewardPointsForAllCustomersAsync action method of the RewardsPointController returns a not found response when there are no customers in the repository.
 
+4. The fourth test case GetRewardPointsForCustomerAsync_ReturnsCustomerRewardPoints tests whether the GetRewardPointsForCustomerAsync action method of the RewardsPointController returns the correct reward points for a given customer.
 
+5. The fifth test case GetRewardPointsForCustomerAsync_ReturnsNotFound_WhenCustomerNotExist tests whether whether the GetRewardPointsForCustomerAsync action method of the RewardsPointController returns a not found response when there is no such customers in the repository.
+
+6. The sixth test caseGetRewardPointsForCustomerAsync_CustomerWithNoTransaction_ReturnsZeroRewardPointsforCustomer tests whether the caseGetRewardPointsForCustomerAsync action method of the RewardsPointController returns zero reward points for customer who has no transactions.
+
+### Run Tests
+xunit testing framework is used To run tests.
+open the Test Explorer by clicking on the "Test" icon on the left-hand side of the Visual Studio Code window. Tests will be listed in the Test Explorer. To run all tests, click the "Run All" button at the top of the Test Explorer. To run specific tests, click on the test(s) you want to run and then click the "Run Selected Tests" button
