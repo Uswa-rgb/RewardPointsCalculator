@@ -15,7 +15,7 @@ Customer's Transaction Data:
 | 003         | Bob Johnson   | $80.00             | 2023-01-03       |
 
 
-We can then use this information to calculate the total reward points earned by each customer:
+We can use this information to calculate the total reward points earned by each customer:
 
 | Customer ID | Customer Name | Total Points | Jan Points | Feb Points | Mar Points |
 | -----------| ------------- | ----------- | ----------| ----------| ---------- |
