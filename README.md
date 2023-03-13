@@ -164,7 +164,7 @@ Mongodb docker image has been used to store data.
 
 Following command can be used to run mongodb image:
 ```
-docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -r MONGO_INITDB_ROOT_USERNAME=mongdboadmin -e MONGO_INITDB_ROOT_PASSWORD=webdir123R
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -r MONGO_INITDB_ROOT_USERNAME=mongdboadmin -e MONGO_INITDB_ROOT_PASSWORD=webdir123R mongo
 ```
 
 # Unit Tests
